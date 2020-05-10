@@ -5,7 +5,7 @@ case $ch1 in
     [yY][eE][sS] | [yY])
         read -p "校园网账号：" username
         read -p "密码：" passwd
-        read -p "输入运营商编号(1:移动,2:电信,3:联通,4:校园网,直接输入数字)：" n
+        read -p "输入运营商编号(1:移动,2:电信,3:联通,直接输入数字)：" n
         case $n in
         1)
             op="cmcc"
@@ -15,9 +15,6 @@ case $ch1 in
             ;;
         3)
             op="unicom"
-            ;;
-        4)
-            op=""
             ;;
         esac
         read -p "网络通断检测周期(单位：秒，直接输入数字)：" tm
